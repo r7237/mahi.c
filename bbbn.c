@@ -7,8 +7,8 @@ int main()
            scanf("%d",&a);
            printf("   Give the Final number for the Range :   \n");
            scanf("%d",&b);
-           printf("\n The Even numbers between %d and %d are ",f1,f2); 
-           for(i=f1; i<=f2; ++i) 
+           printf("\n The Even numbers between %d and %d are ",a,b); 
+           for(i=a; i<=b; ++i) 
            {
                rem = i % 2;
                if(rem == 0)
