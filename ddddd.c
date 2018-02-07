@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
-int main() {
+int main()
+{
     int a, b,c, value, sum=0, i;
     printf("Enter the number of terms in AP series\n");
     scanf("%d", &c);
