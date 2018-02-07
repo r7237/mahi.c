@@ -2,22 +2,18 @@
 #include <conio.h>
 int main()
 {
-    int n, flag;
+    int a, n;
     printf("Enter a positive integer: ");
-    scanf("%d", &n);
-
-    // Check prime number
-    flag = checkPrimeNumber(n);
-    if (flag == 1)
-        printf("%d is a prime number.\n", n);
+    scanf("%d", &a);
+    n = checkPrimeNumber(a);
+    if (n<=10000)
+        printf("%d is a prime number.\n", a);
     else
-        printf("%d is not a prime number.\n", n);
-
-    // Check Armstrong number
+        printf("%d is not a prime number.\n", a);
     flag = checkArmstrongNumber(n);
-    if (flag == 1)
-        printf("%d is an Armstrong number.", n);
+    if (n<=100000)
+        printf("%d is an Armstrong number.", a);
     else
-        printf("%d is not an Armstrong number.",n);
+        printf("%d is not an Armstrong number.",a);
     return 0;
 }
