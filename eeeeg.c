@@ -1,26 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
- 
+#include <conio.h>
 int main() {
-    int first, diff, terms, value, sum=0, i;
- 
+    int a, b,c, value, sum=0, i;
     printf("Enter the number of terms in AP series\n");
-    scanf("%d", &terms);
- 
+    scanf("%d", &c);
     printf("Enter first term and common difference of AP series\n");
-    scanf("%d %d", &first, &diff);
- 
-    /* print the series and add all elements to sum */
-    value = first;
+    scanf("%d %d", &a, &b);
+    value = a;
     printf("AP SERIES\n");
-    for(i = 0; i < terms; i++) {
+    for(i = 0; i < c; i++) {
         printf("%d ", value);
         sum += value;
-        value = value + diff;
+        value = value + b;
     }
- 
-    printf("\nSum of the AP series till %d terms is %d\n", terms, sum);
- 
+    printf("\nSum of the AP series till %d terms is %d\n", c, sum);
     getch();
  return 0;
 }
